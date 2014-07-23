@@ -349,8 +349,10 @@ void ParticleRendererItem::renderFboContents() {
 
     glEnable(GL_BLEND);
 #if !defined(Q_OS_ANDROID)
+    /* Commented out to fix build on ubuntu touch
     glEnable(GL_POINT_SPRITE);
     glEnable(GL_VERTEX_PROGRAM_POINT_SIZE);
+    */
 #endif
 
     glFuncs->glBlendFuncSeparate(GL_SRC_ALPHA, GL_ONE, GL_ONE, GL_ONE);
@@ -403,8 +405,10 @@ void ParticleRendererItem::renderFboContents() {
 
     glDisable(GL_BLEND);
 #if !defined(Q_OS_ANDROID)
+    /* Commented out to fix build on ubuntu touch
     glDisable(GL_POINT_SPRITE);
     glDisable(GL_VERTEX_PROGRAM_POINT_SIZE);
+    */
 #endif
 
     // Compute fake specular highlight at downsampled size.

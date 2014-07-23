@@ -30,8 +30,11 @@
 #include "gl.h"
 #include "glext.h"
 #else
+/* Commented replaced with GLES2 to fix build on ubuntu touch
 #include "GL/gl.h"
 #include "GL/glext.h"
+*/
+#include "GLES2/gl2.h"
 #endif
 
 #include "PointerDeclarations.h"
