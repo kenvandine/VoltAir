@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=VoltAir
+Exec=./VoltAir
+Icon=voltair.png
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true
